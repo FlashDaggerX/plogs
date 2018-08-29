@@ -1,18 +1,21 @@
+-- GLua Script
+
 -- Initializes the log table for the NetLib.
+logs = {}
 
 local hurt = {}
 local cmd = {}
 local kills = {}
 
-function GetHurtLog()
+function logs:GetHurtLog()
 	return hurt
 end
 
-function GetCommandLog()
+function logs:GetCommandLog()
 	return cmd
 end
 
-function GetKillLog()
+function logs:GetKillLog()
 	return kills
 end
 
